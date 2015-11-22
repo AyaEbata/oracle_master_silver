@@ -11,7 +11,7 @@ public class Main {
 //		s2.p_37();
 //		s2.p_52(args);
 		
-		Section3 s3 = new Section3();
+//		Section3 s3 = new Section3();
 //		s3.p_65();
 //		s3.p_66();
 //		s3.p_67();
@@ -23,6 +23,10 @@ public class Main {
 //		s3.p_87();
 //		s3.p_96();
 //		s3.p_99_1();
-		s3.p_99_2();
+//		s3.p_99_2();
+		
+		Section4 s4 = new Section4();
+//		s4.p_129();
+		s4.p_139();
 	}
 }
