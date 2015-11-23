@@ -3,7 +3,7 @@ package oracle_master_silver;
 public class Section1 {
 	
 	// 変数の初期化
-	public void p_26() {
+	public void p26() {
 		int num1 = 10;  // 普通にint
 		long num2 = 30;  // intでもokな値だからintとみなして通る
 		

@@ -3,7 +3,7 @@ package oracle_master_silver;
 public class Section4 {
 
 	// for文
-	public void p_129() {
+	public void p129() {
 		// 1つめ、3つめの式にカンマ区切りで複数個式をいれることも可能
 		for (int i1 = 0, i2 = 0; i1 + i2 < 5; i1++ , i2 += 2) {
 			System.out.println("i1: " + i1 + ", i2: " + i2);
@@ -20,7 +20,7 @@ public class Section4 {
 	}
 	
 	// breakとcontinueのラベル
-	public void p_139() {
+	public void p139() {
 		loop1:
 		// iが2のとき、loop1を抜ける
 		for (int i = 0; i < 10; i++) {

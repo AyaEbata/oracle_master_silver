@@ -3,7 +3,7 @@ package oracle_master_silver;
 public class Section3 {
 	
 	// 小数を使った演算
-	public void p_65() {
+	public void p65() {
 		// 整数/整数（出力：3）
 		System.out.println(10/3);
 
@@ -14,7 +14,7 @@ public class Section3 {
 	}
 	
 	// 文字列と数値混合での出力
-	public void p_66() {
+	public void p66() {
 		String s = "Hello";
 		int n = 10;
 		int m = 20;
@@ -28,7 +28,7 @@ public class Section3 {
 	}
 	
 	// インクリメント
-	public void p_67() {
+	public void p67() {
 		int a = 10, b;
 		int c = 10, d;
 		int e = 10, f = 10;
@@ -48,7 +48,7 @@ public class Section3 {
 	}
 	
 	// 論理演算子
-	public void p_71() {
+	public void p71() {
 		int a = 10, b = 10, c = 10, d= 10;
 		
 		// &は、1つでもfalseがあったら、全体でもfalseを返す
@@ -67,7 +67,7 @@ public class Section3 {
 	}
 	
 	// Stringクラスの掻い摘んだやつ1
-	public void p_73_1() {
+	public void p73_1() {
 		String str = "abcdefg";
 
 		// "c"が前から何番目に出てくるか知りたいとき（intでいける）
@@ -82,7 +82,7 @@ public class Section3 {
 	}
 	
 	// Stringクラスの掻い摘んだやつ2
-	public void p_73_2() {
+	public void p73_2() {
 		String str = "abcde";
 		
 		// replace(char oldChar, char newChar)
@@ -96,7 +96,7 @@ public class Section3 {
 	}
 
 	// 参照型の比較
-	public void p_79() {
+	public void p79() {
 		int[] array1 = {10}, array2 = {10};
 		// 参照先が同じであるかを比較
 		System.out.println(array1 == array2);        // false
@@ -109,7 +109,7 @@ public class Section3 {
 	}
 	
 	// 文字列の比較
-	public void p_81() {
+	public void p81() {
 		String a = new String("aya");
 		String b = new String("aya");
 		// new String(文字列)で作っている場合、個別に作られるから
@@ -125,7 +125,7 @@ public class Section3 {
 	}
 	
 	//booleanのif
-	public void p_87() {
+	public void p87() {
 		boolean b1 = false;
 		boolean b2 = true;
 		
@@ -137,7 +137,7 @@ public class Section3 {
 	}
 	
 	// switchのbreakがないときの動き
-	public void p_96() {
+	public void p96() {
 		int num = 2;
 		
 		// breakがないときは、条件に合ったcase以降のcaseも実行される
@@ -152,7 +152,7 @@ public class Section3 {
 	}
 	
 	// 練習問題　問題3-1
-	public void p_99_1() {
+	public void p99_1() {
 		int x = 7;
 		int y = 6 * x++;
 		// y = 6 * 7 = 42 をやった後に、x = 8 になる
@@ -165,7 +165,7 @@ public class Section3 {
 	}
 	
 	// 練習問題　問題3-2
-	public void p_99_2() {
+	public void p99_2() {
 		byte x = 3;		
 		// byte y = 2 * x++;        // エラー
 		byte y = (byte) (2 * x++);  // (byte)を書いてあげれば通る
