@@ -4,6 +4,8 @@ package oracle_master_silver;
 
 public class Main {
 	public static void main(String[] args) {
+		// 使うやつコメント外していく系
+		
 //		Section1 s1 = new Section1();
 //		s1.p26();
 		
@@ -29,7 +31,7 @@ public class Main {
 //		s4.p129();
 //		s4.p139();
 		
-		Section5 s5 = new Section5(100);
+//		Section5 s5 = new Section5(100);
 //		s5.p163(200);
 		
 //		staticMethod();
@@ -37,7 +39,34 @@ public class Main {
 //		new P174();
 		
 //		s5.p179();
-		s5.p188();
+//		s5.p188();
+		
+//		Section6 s6 = new Section6();
+		// 継承
+//		s6.p212();             // サブクラスから呼び出し
+//		s6.p212_superClass();  // スーパークラスから呼び出し
+
+		// オーバーライド
+//		s6.p217_1();
+//		s6.p217_2();
+		
+		// サブクラスとスーパークラスのコンストラクタ
+//		new Section6();
+//		new Section6("aya");
+		
+		// 抽象クラス
+//		P228_subClass subClass = new P228_subClass();
+//		subClass.p228();
+		
+//		s6.p252();
+		
+		// インターフェース（ちょっと試してみたつ）
+		C c = new C();
+		A a = new C();
+		c.d(a);
+		// または、こっち
+		B b = new B();
+		c.d(b);
 	}
 	
 	// static変数とstaticメソッドの呼び出し	
@@ -51,5 +80,24 @@ public class Main {
 		System.out.println("static i: " + Section5.staticI);  // static i: 10
 		Section5.p170(20);  // static i: 20
 		System.out.println("static i: " + Section5.staticI);  // static i: 20		
+	}	
+}
+
+// インターフェース（ちょっと試してみたつ）
+interface A {
+	public void b();
+}
+class B implements A {
+	public void b() {
+		System.out.println("test");
+	}
+}
+class C extends B {
+	public void d(A a) {
+		a.b();
+	}
+	// または、こっち
+	public void d(B b) {
+		b.b();
 	}
 }
