@@ -61,14 +61,17 @@ public class Main {
 //		s6.p252();
 		
 		// インターフェース（ちょっと試してみたつ）
-		C c = new C();
-		A a = new C();
-		c.d(a);
-		// または、こっち
-		B b = new B();
-		c.d(b);
-	}
+//		C c = new C();
+//		A a = new C();
+//		c.d(a);
+//		// または、こっち
+//		B b = new B();
+//		c.d(b);		
 	
+		Section7 s7 = new Section7();
+		s7.p290();
+	}
+
 	// static変数とstaticメソッドの呼び出し	
 	public static void staticMethod() {
 		// staticは Section5 s5 = new Section5(); のようにインスタンス化せずに
